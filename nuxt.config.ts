@@ -15,5 +15,22 @@ export default defineNuxtConfig({
     plugins: {
       '@tailwindcss/postcss': {},
     }
+  },
+
+  // GitHub Pages configuration
+  nitro: {
+    prerender: {
+      routes: ['/']
+    }
+  },
+
+  // Set base URL for GitHub Pages deployment
+  app: {
+    baseURL: process.env.NUXT_APP_BASE_URL || '/'
+  },
+
+  // Ensure assets are properly handled
+  vite: {
+    assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg']
   }
 })
