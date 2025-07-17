@@ -70,7 +70,7 @@
             <span class="font-bold">LIVE</span>
         </div>
         <div v-if="thumbnail.status === 'Huy lich'" class="text-white border border-red-500 bg-red-500 px-2 py-1 rounded">
-            <font-awesome icon="bell-slash" style="font-size: 30px" />
+            <!-- <font-awesome icon="bell-slash" style="font-size: 30px" /> -->
             <div class="font-bold">Huy lich</div>
         </div>
         <div v-if="thumbnail.status === 'Dat lich'" class="text-white border border-red-500 bg-red-500 px-2 py-1 rounded">
