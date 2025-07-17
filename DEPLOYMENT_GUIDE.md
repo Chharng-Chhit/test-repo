@@ -42,6 +42,18 @@ git push -u origin main
 - Check the "Actions" tab in your repository to see deployment progress
 - Once complete, your app will be available at: `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME`
 
+## ✅ **Fixed Issues:**
+
+### **Assets & Images Loading**
+- **Issue**: CSS and images not loading on GitHub Pages due to incorrect base URL
+- **Solution**: Added `NUXT_APP_BASE_URL` environment variable configuration
+- **Status**: ✅ **RESOLVED** - Assets now load correctly with proper subdirectory paths
+
+### **Build Configuration**
+- **Issue**: GitHub Pages serves from subdirectory (e.g., `/repo-name/`) not root
+- **Solution**: Updated `nuxt.config.ts` and GitHub Actions workflow
+- **Status**: ✅ **RESOLVED** - Base URL automatically set during deployment
+
 ## 🎯 **Current Project Status:**
 - **Development Server**: `http://localhost:3001`
 - **Build Status**: ✅ Production ready
